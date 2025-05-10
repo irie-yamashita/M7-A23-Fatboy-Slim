@@ -35,8 +35,8 @@ $app->get('/', function (Request $request, Response $response) use ($pdo) {
     </head>
     <body>
         <header>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/480px-Spotify_logo_without_text.svg.png' alt='logo' id='logo'>
-            <h1>ITBfy</h1>
+            <img src='https://itb.cat/wp-content/uploads/2024/02/florITB_Blanc140.png' alt='logo' id='logo'>
+            <h1>fy</h1>
         </header>
     <main>
     <h1>ARTISTES</h1>
@@ -83,8 +83,8 @@ $app->get('/artista/{id}', function (Request $request, Response $response, $args
         </head>
         <body>
         <header>
-            <a href='/'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/480px-Spotify_logo_without_text.svg.png' alt='logo' id='logo'></a>
-            <h1>ITBfy</h1>
+            <a href='/'><img src='https://itb.cat/wp-content/uploads/2024/02/florITB_Blanc140.png' alt='logo' id='logo'></a>
+            <h1>fy</h1>
         </header>
         <main>
             <h1>$artista[nom]</h1>
@@ -142,7 +142,8 @@ $app->get('/artista/{id}', function (Request $request, Response $response, $args
             </section>
 
             <section id='sec_video'>
-                <iframe width='560' height='315' src='https://youtu.be/d5gf9dXbPi0?si=mrvjEYqhTHwiTt3_' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+                <iframe width='560' height='315' src='https://youtu.be/d5gf9dXbPi0?si=GcMYlUDQp68BHRJE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+
             </section>
 
         </main>

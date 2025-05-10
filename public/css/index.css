@@ -13,13 +13,15 @@ body {
 /*HEADER*/
 header {
     display: flex;
-    align-items: center;
 
-    gap: 20px;
+    align-items: flex-end;
+    gap:5px;
+
     padding: 15px 20px;
 
     background-color: blue;
 }
+
 
 #logo {
     height: 40px;
@@ -35,7 +37,7 @@ main {
 
 main h1 {
     margin: 20px;
-    color:blue;
+    color:white;
 }
 
 section {
