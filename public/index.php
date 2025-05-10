@@ -72,6 +72,7 @@ $app->get('/artista/{id}', function (Request $request, Response $response, $args
     $stmt = $pdo->query("SELECT * FROM artistes WHERE id = $id");
     $artista = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    $oients_milers = number_format($artista["oients"], 0, ',', '.');
     $htmlContent = "
         <!DOCTYPE html>
         <html lang='en'>
@@ -111,10 +112,10 @@ $app->get('/artista/{id}', function (Request $request, Response $response, $args
             <section id='sec_dadesMusica'>
                 <div class='quadrat'>
                     <p>OIENTS MENSUALS</p>
-                    <p><strong>$artista[oients]</strong></p>
+                    <p><strong>$oients_milers</strong></p>
                 </div>
                     <div class='quadrat'>
-                    <p>GÈNERES MÚSICALS</p>
+                    <p>GÈNERES MUSICALS</p>
                     <p><strong>$artista[genere_musical]</strong></p>
                 </div>
             </section>
@@ -125,7 +126,7 @@ $app->get('/artista/{id}', function (Request $request, Response $response, $args
             </section>
 
             <section id='sec_cancons'>
-                <h2>CANÇONS</h2>
+                <h2>Cançons</h2>
                 <div id='div_cancons'>";
 
             $cancons = explode(",",$artista["cancons"]);

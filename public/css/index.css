@@ -8,15 +8,19 @@ body {
     background-color: rgb(20, 20, 20);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 /*HEADER*/
 header {
+    width: 97.5%;
     display: flex;
-
     align-items: flex-end;
-    gap:5px;
 
+    gap:3px;
     padding: 15px 20px;
 
     background-color: blue;
@@ -28,6 +32,8 @@ header {
 }
 
 main {
+    width: 80%;
+
     padding: 20px;
     gap: 50px;
 
@@ -52,7 +58,7 @@ section {
 }
 
 article {
-    background-color: rgb(61, 61, 61);
+    background-color:  rgb(31, 31, 31);
 
     display: flex;
     flex-direction: column;
@@ -63,6 +69,8 @@ article {
     padding: 20px;
 
     border-radius: 5px;
+
+    transition: transform 0.3s ease; 
 
 }
 
@@ -78,11 +86,15 @@ article a {
 
     border-radius: 5px;
 
-    transition: transform 0.3s ease; 
 }
 
 article:hover {
+
     transform: scale(1.05);
+
+}
+article a:hover {
+    background-color: rgba(0, 0, 255, 0.671);
 }
 
 article p {
